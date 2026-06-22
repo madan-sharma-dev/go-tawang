@@ -1,0 +1,32 @@
+# Go Tawang
+
+> Go Tawang is a local tourism service website for Tawang and Arunachal Pradesh, India.
+
+## Website Purpose
+
+Go Tawang helps travelers plan trips to Tawang and Arunachal Pradesh with information and services for tour packages, hotel booking, cab and car rental, Bumla Pass permits, Inner Line Permit support, local sightseeing, village tours and trekking experiences.
+
+## Key Pages
+
+- Home: https://gotawang.com/
+- Tourism services: https://gotawang.com/#services
+- Tourist places: https://gotawang.com/#places
+- Tour packages: https://gotawang.com/#packages
+- Vehicles: https://gotawang.com/#cars
+- FAQs: https://gotawang.com/#faq
+- Contact: https://gotawang.com/#contact
+
+## Crawl Permissions
+
+AI crawlers and search engines may crawl and index public website content for discovery, citation, and answer generation when attribution to Go Tawang is preserved. Do not use contact phone numbers for spam, scraping lists, or unsolicited outreach.
+
+## Business Information
+
+- Brand: Go Tawang
+- Region served: Tawang, Arunachal Pradesh, India
+- Services: Tawang packages, hotel booking, cab services, Bumla Permit, ILP support, trekking tours
+- Phone: 6909295675, 9436649192, 9862534033
+
+## Content Notes
+
+The site describes local travel services, popular Tawang destinations, vehicle options, guest memories and practical trip-planning questions. Content should be interpreted as travel service information and local tourism guidance.
