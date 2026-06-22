@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Tawang | Tawang &amp; Arunachal Pradesh Tourism Services</title>
+
+    <meta name="description"
+        content="Go Tawang offers complete tourism services in Tawang and Arunachal Pradesh including hotels, cab booking, Bumla Pass permits, ILP, local sightseeing, village tours, trekking packages and more." />
+
+    <meta name="keywords"
+        content="Go Tawang, Tawang tourism, Arunachal Pradesh tourism, Bumla Pass permit, ILP Arunachal, Tawang hotels, Tawang cabs, local sightseeing Tawang, Mago trip, Zemithang tour, Tawang packages" />
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2308202e'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-size='28' font-weight='700' fill='%23f9b234'%3EGT%3C/text%3E%3C/svg%3E" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f5f7f2;
+            color: #1d2521;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        .container {
+            width: min(92%, 1200px);
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section {
+            padding: 86px 0;
+        }
+
+        /* HEADER */
+
+        header {
+            background: rgba(8, 24, 34, 0.94);
+            backdrop-filter: blur(16px);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.16);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.86);
+            transition: 0.3s;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover {
+            color: #f9b234;
+        }
+
+        /* HERO */
+
+        .hero {
+            background:
+                linear-gradient(90deg, rgba(6, 17, 25, 0.86) 0%, rgba(6, 17, 25, 0.68) 48%, rgba(6, 17, 25, 0.22) 100%),
+                url('https://i.pinimg.com/736x/24/f3/5c/24f35cd5187a15c6d6b1c14f75fe825f.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: calc(100vh - 68px);
+            display: flex;
+            align-items: center;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 180px;
+            background: linear-gradient(0deg, #f5f7f2 0%, rgba(245, 247, 242, 0) 100%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 820px;
+            position: relative;
+            z-index: 1;
+            padding: 64px 0 92px;
+        }
+
+        .hero-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 14px;
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.11);
+            color: #ffe0a3;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 7vw, 78px);
+            margin-bottom: 22px;
+            line-height: 1.2;
+            max-width: 920px;
+        }
+
+        .hero p {
+            font-size: clamp(17px, 2vw, 21px);
+            margin-bottom: 32px;
+            max-width: 720px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+            min-width: 150px;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: #f9b234;
+            color: #000;
+        }
+
+        .btn-primary:hover {
+            background: #fff;
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            border: 2px solid #fff;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .btn-outline:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        .hero-highlights {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            max-width: 720px;
+            margin-top: 34px;
+        }
+
+        .hero-highlight {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 8px;
+            padding: 16px;
+            backdrop-filter: blur(12px);
+        }
+
+        .hero-highlight strong {
+            display: block;
+            color: #f9b234;
+            font-size: 25px;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .hero-highlight span {
+            color: rgba(255, 255, 255, 0.84);
+            font-size: 14px;
+        }
+
+        /* SECTION TITLE */
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: clamp(30px, 4vw, 42px);
+            margin-bottom: 15px;
+            color: #08202e;
+            line-height: 1.2;
+        }
+
+        .section-title p {
+            color: #5f6b64;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* SERVICES */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: #fff;
+            border-radius: 8px;
+            transition: 0.4s;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            border: 1px solid rgba(8, 32, 46, 0.08);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 18px 38px rgba(8, 32, 46, 0.13);
+        }
+
+        .service-card img {
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 24px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 12px;
+            color: #08202e;
+            line-height: 1.3;
+        }
+
+        .service-card p {
+            color: #59645f;
+        }
+
+        /* PLACES */
+
+        .places-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 25px;
+        }
+
+        .place-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: 0.4s;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .place-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .place-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .place-content {
+            padding: 20px;
+        }
+
+        .place-content h3 {
+            margin-bottom: 10px;
+            color: #0b1d2a;
+        }
+
+        .place-content p {
+            color: #59645f;
+        }
+
+        /* PACKAGES */
+
+        .package-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .package-card {
+            background: linear-gradient(145deg, #08202e, #12384a);
+            color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            transition: 0.4s;
+            min-height: 190px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .package-card:hover {
+            transform: scale(1.03);
+        }
+
+        .package-card h3 {
+            margin-bottom: 15px;
+            color: #f9b234;
+        }
+
+        /* CARS */
+
+        .cars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .car-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: 0.4s;
+            border: 1px solid rgba(8, 32, 46, 0.08);
+        }
+
+        .car-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .car-card h3 {
+            color: #08202e;
+            margin-bottom: 8px;
+        }
+
+        .car-card p {
+            color: #59645f;
+        }
+
+        /* GALLERY */
+
+        .tourist-gallery {
+            background: #fff;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            grid-auto-flow: dense;
+            gap: 16px;
+        }
+
+        .gallery-item {
+            position: relative;
+            min-height: 240px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(8, 32, 46, 0.12);
+            background: #d9e1d5;
+        }
+
+        .gallery-item:nth-child(1),
+        .gallery-item:nth-child(6) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .gallery-item:nth-child(4) {
+            grid-column: span 2;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            min-height: inherit;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.06);
+        }
+
+        .why-section {
+            background: #eef3eb;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            background: linear-gradient(135deg, #07131c, #0f3345);
+            color: #fff;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contact-box {
+            flex: 1;
+            min-width: min(280px, 100%);
+        }
+
+        .contact-box h3 {
+            margin-bottom: 20px;
+            color: #f9b234;
+        }
+
+        .contact-box a {
+            color: #fff;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #07131c;
+            color: rgba(255, 255, 255, 0.88);
+            text-align: center;
+            padding: 24px 16px;
+            font-size: 15px;
+        }
+
+        footer a {
+            color: #f9b234;
+            font-weight: 700;
+        }
+
+        .footer-line+.footer-line {
+            margin-top: 6px;
+        }
+
+        /* MOBILE */
+
+        @media(max-width:768px) {
+
+            .hero {
+                min-height: auto;
+            }
+
+            .hero-content {
+                padding: 56px 0 76px;
+            }
+
+            .hero-highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                justify-content: center;
+                row-gap: 8px;
+            }
+
+            section {
+                padding: 62px 0;
+            }
+
+            .btn {
+                flex: 1 1 180px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .gallery-item,
+            .gallery-item:nth-child(1),
+            .gallery-item:nth-child(4),
+            .gallery-item:nth-child(6) {
+                grid-column: span 1;
+                grid-row: span 1;
+                min-height: 260px;
+            }
+        }
+
+        @media(max-width:520px) {
+            .container {
+                width: min(92%, 420px);
+            }
+
+            .navbar {
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                width: 100%;
+                justify-content: flex-start;
+                gap: 12px 16px;
+            }
+
+            .hero {
+                background-position: 58% center;
+            }
+
+            .hero h1 {
+                line-height: 1.12;
+            }
+
+            .service-card img,
+            .place-card img {
+                height: 180px;
+            }
+
+            .gallery-grid {
+                gap: 12px;
+            }
+
+            .gallery-item,
+            .gallery-item:nth-child(1),
+            .gallery-item:nth-child(4),
+            .gallery-item:nth-child(6) {
+                min-height: 210px;
+            }
+        }
+
+        @media(max-width:360px) {
+
+            .services-grid,
+            .places-grid,
+            .package-wrapper,
+            .cars-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">Go Tawang</div>
+
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#places">Places</a>
+                <a href="#packages">Packages</a>
+                <a href="#cars">Cars</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+
+                <div class="hero-kicker">Local Tawang Travel Experts</div>
+
+                <h1>Explore Tawang &amp; Arunachal Pradesh with Go Tawang</h1>
+
+                <p>
+                    Best tourism services in Tawang including hotels, cab booking,
+                    Bumla Pass permit, ILP, local sightseeing, village tours,
+                    trekking packages and complete Arunachal Pradesh travel support.
+                </p>
+
+                <div class="btn-group">
+                    <a href="tel:6909295675" class="btn btn-primary">Call Now</a>
+
+                    <a href="#packages" class="btn btn-outline">
+                        View Packages
+                    </a>
+                </div>
+
+                <div class="hero-highlights">
+                    <div class="hero-highlight">
+                        <strong>24/7</strong>
+                        <span>Travel support from local experts</span>
+                    </div>
+
+                    <div class="hero-highlight">
+                        <strong>Permits</strong>
+                        <span>Bumla Pass and ILP assistance</span>
+                    </div>
+
+                    <div class="hero-highlight">
+                        <strong>Custom</strong>
+                        <span>Hotels, cabs, treks and tours</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+
+    <section id="services">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Our Tourism Services</h2>
+                <p>
+                    Go Tawang provides complete travel and tourism solutions
+                    for visitors exploring Tawang and Arunachal Pradesh.
+                </p>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <img src="https://i.pinimg.com/736x/1f/03/7e/1f037e5a655beaa2eacdd1ff5d449982.jpg"
+                        alt="Mountain road tour package in Arunachal Pradesh">
+                    <div class="service-content">
+                        <h3>Tawang Tour Packages</h3>
+                        <p>
+                            Affordable and premium Tawang holiday packages
+                            for couples, families and groups.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="https://i.pinimg.com/736x/54/55/a6/5455a645ba3793fa8da237a1ba42f1c0.jpg"
+                        alt="Cab rental vehicle for mountain travel">
+                    <div class="service-content">
+                        <h3>Cab &amp; Car Rental</h3>
+                        <p>
+                            Comfortable local and outstation cab services
+                            with experienced mountain drivers.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="https://i.pinimg.com/1200x/80/76/3f/80763f53fe636db9f99ba1c8b1e5d7a8.jpg"
+                        alt="Comfortable mountain hotel stay">
+                    <div class="service-content">
+                        <h3>Hotel Booking</h3>
+                        <p>
+                            Budget hotels, luxury stays, homestays and
+                            mountain view accommodations in Tawang.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="https://i.pinimg.com/736x/11/32/c2/1132c22d4d866b4486a497341902403d.jpg"
+                        alt="Snow mountain pass for Bumla sightseeing">
+                    <div class="service-content">
+                        <h3>Bumla Pass Permit</h3>
+                        <p>
+                            Fast and easy permit assistance for Bumla Pass
+                            and border sightseeing tours.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="https://i.pinimg.com/736x/7c/d9/a0/7cd9a00ad3842365666e2808c41f6016.jpg"
+                        alt="Travel documents and permit assistance">
+                    <div class="service-content">
+                        <h3>ILP Assistance</h3>
+                        <p>
+                            Complete Inner Line Permit support for Arunachal Pradesh travel.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&amp;w=900&amp;auto=format&amp;fit=crop"
+                        alt="Guided trekking tour in mountain landscape">
+                    <div class="service-content">
+                        <h3>Village &amp; Trekking Tours</h3>
+                        <p>
+                            Explore remote villages, local culture and trekking
+                            adventures around Tawang.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PLACES -->
+
+    <section id="places">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Top Tourist Places in Tawang</h2>
+
+                <p>
+                    Discover beautiful monasteries, valleys, lakes,
+                    waterfalls and hidden gems in Arunachal Pradesh.
+                </p>
+            </div>
+
+            <div class="places-grid">
+
+    <div class="place-card">
+        <img src="images/water_fall" alt="Chumegyatser Holy Waterfall">
+        <div class="place-content">
+            <h3>Chumegyatser Holy Waterfall</h3>
+            <p>
+                Chumi Gyatse means "100 Holy Waterfalls" in Tibetan and Monpa tradition. Water flows down the rocky mountain in countless streams, making it one of the most sacred and beautiful attractions near Tawang.
+            </p>
+        </div>
+    </div>
+
+    <div class="place-card">
+        <img src="images/go tawang.jpeg" alt="Bum La Pass">
+        <div class="place-content">
+            <h3>Bum La Pass</h3>
+            <p>
+                Located about 37 km from Tawang near the India–China border, Bum La Pass stands at approximately 15,200 ft above sea level and is one of the most visited tourist destinations in Arunachal Pradesh.
+            </p>
+        </div>
+    </div>
+
+    <div class="place-card">
+        <img src="images/go tawang.jpeg" alt="Sela Pass">
+        <div class="place-content">
+            <h3>Sela Pass</h3>
+            <p>
+                One of the highest motorable mountain passes in India, Sela Pass is situated at around 13,700 ft on the route between Dirang and Tawang, offering breathtaking views of snow-covered peaks and alpine lakes.
+            </p>
+        </div>
+    </div>
+
+    <div class="place-card">
+        <img src="images/go tawang.jpeg" alt="Mago Village">
+        <div class="place-content">
+            <h3>Mago Village</h3>
+            <p>
+                Mago is one of the most beautiful and remote villages in Arunachal Pradesh. Known for ancient monasteries, yak grazing fields, rich Monpa culture, and untouched Himalayan landscapes.
+            </p>
+        </div>
+    </div>
+
+    <div class="place-card">
+        <img src="images/go tawang.jpeg" alt="Gongkhar La">
+        <div class="place-content">
+            <h3>Gongkhar La</h3>
+            <p>
+                A stunning high-altitude mountain pass near Mago featuring crystal-clear alpine lakes, winter snow scenery, and unexplored natural beauty, making it a paradise for photographers and adventure lovers.
+            </p>
+        </div>
+    </div>
+
+    <div class="place-card">
+        <img src="images/go tawang.jpeg" alt="Tawang Monastery">
+        <div class="place-content">
+            <h3>Tawang Monastery</h3>
+            <p>
+                Also known as Ganden Namgyal Lhatse, it is the largest monastery in India and the second-largest Tibetan Buddhist monastery in the world, founded in 1680–1681.
+            </p>
+        </div>
+    </div>
+
+    <div class="place-card">
+        <img src="images/go tawang.jpeg" alt="Zemithang">
+        <div class="place-content">
+            <h3>Zemithang (Phangchen)</h3>
+            <p>
+                A peaceful destination near the Indo-China border, Zemithang is famous for scenic valleys, vibrant Monpa culture, Buddhist heritage, and breathtaking Himalayan landscapes.
+            </p>
+        </div>
+    </div>
+
+    <div class="place-card">
+        <img src="images/go tawang.jpeg" alt="Dirang Monastery">
+        <div class="place-content">
+            <h3>Dirang Monastery</h3>
+            <p>
+                Also known as Dirang Gompa, this beautiful monastery is located in the picturesque Dirang Valley and serves as an important spiritual stop on the journey to Tawang.
+            </p>
+        </div>
+    </div>
+
+    <div class="place-card">
+        <img src="images/go tawang.jpeg" alt="Gorsam Chorten">
+        <div class="place-content">
+            <h3>Gorsam Chorten</h3>
+            <p>
+                Situated in Zemithang Valley, this magnificent 93-foot Buddhist stupa is one of the largest in the region and symbolizes Himalayan Buddhist heritage and India–Bhutan friendship.
+            </p>
+        </div>
+    </div>
+
+    <div class="place-card">
+        <img src="images/go tawang.jpeg" alt="Dolma Lhakhang">
+        <div class="place-content">
+            <h3>Dolma Lhakhang</h3>
+            <p>
+                A revered Buddhist temple in Lungla dedicated to Jetsun Dolma (White Tara). It is located on the historic route toward Khen-Dze-Mani and Zemithang.
+            </p>
+        </div>
+    </div>
+
+    <div class="place-card">
+        <img src="images/go tawang.jpeg" alt="Chaksam Bridge">
+        <div class="place-content">
+            <h3>Chaksam Bridge</h3>
+            <p>
+                Traditional iron-chain suspension bridges in Himalayan Buddhist regions were known as Chaksam. This historic bridge dates back to the 16th century and reflects ancient engineering excellence.
+            </p>
+        </div>
+    </div>
+
+</div>
+        </div>
+    </section>
+
+    <!-- PACKAGES -->
+
+    <section id="packages">
+        <div class="container">
+
+    <div class="section-title">
+        <h2>Popular Tawang Tour Packages</h2>
+
+        <p>
+            Customized Tawang and Arunachal Pradesh tour packages for families, couples, groups, and adventure travelers.
+        </p>
+    </div>
+
+    <div class="package-wrapper">
+
+        <div class="package-card">
+            <h3>7 Days & More Tawang Tour</h3>
+            <p>
+                Complete Tawang holiday package including local sightseeing, hotel accommodation, transportation, permits, and guided travel assistance.
+            </p>
+        </div>
+
+        <div class="package-card">
+            <h3>Inter Tawang Local Tour</h3>
+            <p>
+                Explore Bum La Pass, Chumegyatser Holy Waterfall, Mago Village, Zemithang, Tawang Monastery, and other major attractions.
+            </p>
+        </div>
+
+        <div class="package-card">
+            <h3>Village Experience Tour</h3>
+            <p>
+                Experience authentic Monpa culture with traditional food, folk songs, local lifestyle, cultural activities, and traditional dress.
+            </p>
+        </div>
+
+        <div class="package-card">
+            <h3>Trekking Adventure Tour</h3>
+            <p>
+                Guided trekking expeditions through Himalayan landscapes to discover mountain flowers, wildlife, birds, and breathtaking views.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+    </section>
+
+    <!-- CARS -->
+
+    <section id="cars">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Available Tourist Vehicles</h2>
+
+                <p>
+                    Comfortable cars and SUVs for mountain travel and sightseeing.
+                </p>
+            </div>
+
+            <div class="cars-grid">
+
+                <div class="car-card">
+                    <h3>Mahindra Scorpio</h3>
+                    <p>Perfect for mountain roads and group travel.</p>
+                </div>
+
+                <div class="car-card">
+                    <h3>Toyota Innova</h3>
+                    <p>Comfortable family vehicle for long tours.</p>
+                </div>
+
+                <div class="car-card">
+                    <h3>Mahindra Xylo</h3>
+                    <p>Budget friendly SUV for sightseeing trips.</p>
+                </div>
+
+                <div class="car-card">
+                    <h3>Tata Sumo</h3>
+                    <p>Reliable vehicle for hilly terrain journeys.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HAPPY TOURISTS -->
+
+    <section class="tourist-gallery">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Happy Tourist Memories</h2>
+
+                <p>
+                    Real travel moments from guests exploring Tawang and Arunachal Pradesh with Go Tawang.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <img src="images/go%20tawang.jpeg" alt="Happy tourists with Go Tawang">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/go%20tawang%20Image%202026-05-15%20at%2019.27.05.jpeg" alt="Tourists enjoying a Tawang trip">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/go%20tawang%20Image%202026-05-15%20at%2019.27.06.jpeg" alt="Travelers posing during Arunachal tour">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/go%20tawang%20Image%202026-05-15%20at%2019.27.06%20%281%29.jpeg" alt="Group of tourists on a mountain journey">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/go%20tawang%20Image%202026-05-15%20at%2019.27.07.jpeg" alt="Guests enjoying local sightseeing in Tawang">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/go%20tawang%20Image%202026-05-15%20at%2019.27.08.jpeg" alt="Happy travelers during a Go Tawang tour">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/go%20tawang%20Image%202026-05-15%20at%2019.27.08%20%281%29.jpeg" alt="Tourist group smiling on a scenic trip">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/go%20tawang%20Image%202026-05-15%20at%2019.27.09.jpeg" alt="Visitors making memories in Arunachal Pradesh">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+
+    <section class="why-section">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Why Choose Go Tawang?</h2>
+
+                <p>
+                    Trusted local tourism service provider for unforgettable
+                    Arunachal Pradesh journeys.
+                </p>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <img src="https://i.pinimg.com/736x/ca/ab/c6/caabc65e07587ceb0a1981c7023167a9.jpg"
+                        alt="Local guide expertise for Arunachal tours">
+                    <div class="service-content">
+                        <h3>Local Expertise</h3>
+                        <p>
+                            Experienced local guides and drivers who know every route.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&amp;w=900&amp;auto=format&amp;fit=crop"
+                        alt="Affordable travel package planning">
+                    <div class="service-content">
+                        <h3>Affordable Pricing</h3>
+                        <p>
+                            Best travel packages and budget friendly tourism solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&amp;w=900&amp;auto=format&amp;fit=crop"
+                        alt="Tour support and customer assistance">
+                    <div class="service-content">
+                        <h3>24/7 Support</h3>
+                        <p>
+                            Dedicated customer support throughout your journey.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="https://i.pinimg.com/1200x/cc/12/0b/cc120bfbdb1b930c2f93d7490b4e2dd3.jpg"
+                        alt="Safe and comfortable mountain travel">
+                    <div class="service-content">
+                        <h3>Safe &amp; Comfortable</h3>
+                        <p>
+                            Clean vehicles, verified hotels and safe travel experiences.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+        <div class="container">
+
+            <div class="contact-wrapper">
+
+                <div class="contact-box">
+                    <h3>Go Tawang</h3>
+
+                    <p>
+                        Complete tourism services in Tawang and Arunachal Pradesh.
+                        Hotels, cabs, permits, trekking and local sightseeing.
+                    </p>
+                </div>
+
+                <div class="contact-box">
+                    <h3>Call Us</h3>
+
+                    <a href="tel:6909295675">6909295675</a>
+                    <a href="tel:9436649192">9436649192</a>
+                    <a href="tel:9862534033">9862534033</a>
+                </div>
+
+                <div class="contact-box">
+                    <h3>Tour Services</h3>
+
+                    <p>✔ Tawang Packages</p>
+                    <p>✔ Hotel Booking</p>
+                    <p>✔ Cab Services</p>
+                    <p>✔ Bumla Permit</p>
+                    <p>✔ ILP Support</p>
+                    <p>✔ Trekking Tours</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p class="footer-line">© 2026 Go Tawang | All Rights Reserved</p>
+        <p class="footer-line">
+            Made with ❤️ by
+            <a>Madan Sharma</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
